@@ -1,0 +1,457 @@
+body {
+    background-color: rgba(255, 255, 255, 0.778);
+    width: 100%;
+    font-family: Calibri, Trebuchet MS;
+    margin: 0 auto;}
+
+#nav {
+    width: 400px;
+}
+
+#nav li {
+    display:inline;
+    border: 2px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 4%;
+    border-radius: 100px;
+    line-height: 50px;
+}
+
+
+a:link,a:visited {
+    color:#000000;
+    text-decoration: none;
+}
+
+#name {
+    font-size: 250%;
+    width:200px;
+}
+
+#nav ul{
+    list-style-type: none;
+    list-style-position: inside;
+    margin-left: 0;
+    padding-inline-start: 0px;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color:#ffffff ;
+    z-index: 10;
+    width:80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#title {
+    font-size: 500%;
+    padding-top: 80%;
+    display: flex;
+    padding-top: 80px;
+    padding-left: 10%;
+    margin-bottom: -3%;
+}
+
+/*narrow title*/
+@media (max-width: 750px) {
+    #title {
+        font-size:400%;
+        padding-top: 100px;
+        padding-left: 15%;
+    }
+}
+
+h4{
+    font-size: 140%;
+    line-height: 300%;
+    padding-top: 3%;
+    margin:0;
+}
+
+label{
+    color:#6f6f6f;
+    font-style: italic;
+    padding-top: 2%;
+}
+
+strong{
+    font-weight: bold;
+}
+
+
+button {
+    display: none;
+}
+
+/*narrow screens header*/
+@media (max-width: 750px) {
+    #header {
+        position:fixed;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    #name{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    #nav li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 110%;
+        border: 2px solid #000000;
+        padding: .05px 5px;
+        margin: 10px;
+        border-radius: 30px;
+        line-height: 40px;
+    }
+
+    #nav {
+        width: 50%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    button {
+        cursor: pointer;
+        display: flex;
+        justify-content: end;
+        padding:0;
+        background: #ffffff;
+        border: none;
+    }
+
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2% 10%;
+}
+#content1{
+    font-size: 130%;
+    flex-direction: column;
+    width: 90%;
+}
+
+#content2{
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 40%;
+}
+
+#content b {
+    font-size: 140%;
+}
+
+/*narrow content*/
+@media (max-width: 1000px) {
+    #content {
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        padding: 0%;
+        width: 70%;
+    }
+    #content1 {
+        width: 100%;
+    }
+    #content2 {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+body ul{
+    line-height: 25px;
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.Ferret {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -5%;
+}
+
+.Summer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 5%;
+}
+
+.Chair_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-end;
+    margin-top: 5%;
+}
+
+.Ferret1, .Summer1, .Chair1_1{
+    flex-direction: column;
+    padding-left: 10%;
+    line-height: 25px;
+    width: 40%;
+}
+
+.Chair1_1{
+    display: flex;
+    padding-left: 10%;
+    line-height: 25px;
+    width: 40%;
+}
+
+.Ferret1 img {
+    margin-top:5%;
+    width: 60%;
+    padding-left: 10%;
+}
+
+.Summer1 img {
+    margin-top:5%;
+    padding: 0% 10%;
+    width:80%;
+}
+
+.Chair1_1 img{
+    margin-top:5%;
+    width:60%;
+    padding: 0% 10%;
+    align-items: center;
+}
+
+.Ferret2, .Summer2, .Chair1_2{
+    flex-direction: column;
+    line-height: 25px;
+    width: 35%;
+    padding-right: 10%;
+    justify-content: flex-end;
+}
+
+.Ferret3{
+    flex-direction: column;
+    justify-content: center;
+    line-height: 25px;
+    padding-top: 2.5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.Ferret2 img, .Ferret3 img, .Summer2 img {
+    width:100%
+}
+
+.Chair1_2 img {
+    width: 80%;
+}
+
+.SR1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    padding-left: 10%;
+    line-height: 25px;
+    width: 50%;
+}
+.SR2, .Chair_2{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    line-height: 25px;
+}
+ .SR2 img{
+    width: 24%;
+    margin-right: 1%;
+ }
+
+ .Chair_2 img{
+    width: 19%;
+    margin-right: 1%;
+ }
+
+.BP{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+.BP1{
+    flex-direction: column;
+    margin-top: 5%;
+    width:40%;
+    line-height: 25px;
+    padding-left: 10%;
+}
+.BP1 img,.BP2 img{
+    margin-top:5%;
+    width: 100%
+}
+.BP2{
+    padding-top: 5%;
+    padding-right: 10%;
+}
+.BP3{
+    display: flex;
+    flex-direction:column;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2.5%;
+}
+.BP4{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2.5%;
+}
+.BP5, .BP7{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+    margin-left: 40%;
+    margin-right: 10%;
+}
+.BP6{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5%;
+    margin-left: 10%;
+    margin-right: 40%;
+}
+.BP7{
+    margin-bottom: 2%;
+}
+
+/*narrow Archi*/
+@media (max-width: 900px) {
+    .Ferret,.Summer, .Chair_1, .BP {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .Ferret1, .Summer1, .SR1, .Chair1_1, .BP1{
+        line-height: 25px;
+        width: 70%;
+        padding-right: 15%;
+    }
+    .Ferret1 img, .Summer1 img,.Chair1_1 img{
+        width: 70%;
+        padding: 0% 15%;
+    }
+    .BP2, .SR2, .Chair_2{
+        flex-direction: column;
+        width:70%;
+    }
+
+    .SR2 img, .Chair_2 img{
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .BP3, .BP4{
+        width:70%;
+        margin-top: 5%;
+    }
+    .BP5,.BP6{
+        margin:auto;
+        padding-top:5%;
+        width: 70%;
+    }
+    .BP7{
+        margin:auto;
+        padding:5% 0%;
+        width: 70%;}
+    .Ferret2, .Summer2, .Chair1_2{
+        display: flex;
+        width: 70%;
+        padding:0% 15%;
+    }
+    .Summer1 img{
+        width: 100%;
+        padding: 0%;
+    }
+    .Summer2 img, .Chair1_2 img{
+        width: 100%;
+        padding-top: 5%;
+    }
+}
+
+.Art1_1, .Art2_1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 40%;
+}
+.Art1_1{
+    margin-top: -5%;
+}
+
+.Art_1, .Art_2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2% 10%;
+    width: 80%;
+}
+.Art1_2 img,.Art1_3 img, .Art2_2 img, .Art2_3 img{
+    width: 100%;
+}
+.Art1_3,.Art2_3{
+    margin-left: 20%;
+}
+
+
+/*narrow Art*/
+@media (max-width: 750px) {
+    .Art1_1, .Art2_1 {
+        margin:auto;
+        width: 70%;
+    }
+    .Art_1, .Art_2{
+        flex-direction: column;
+        justify-content: center;
+        padding:0%;
+        width: 70%;
+        margin-left:15%;
+        margin-bottom: 5%;
+    }
+    .Art1_3, .Art2_3{
+        margin-left: 0%;
+    }
+    .Art_1 img, .Art_2 img{
+        width: 100%;
+    }
+}
+#footer label{
+    display: flex;
+    padding-left: 10%;
+    padding-bottom: 5%;
+    color:#d7d7d7;
+}
